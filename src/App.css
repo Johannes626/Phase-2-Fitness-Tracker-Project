@@ -1,38 +1,100 @@
 .App {
+  background-color: #282c34;
+  color: #00ccff;
+}
+
+.day-title {
+  text-shadow: 0 0 3px white;
+}
+
+.date-title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.day-card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 35rem;
+  height: 35rem;
+  display: flow;
+  display: inline-block;
+  margin: .5rem 1rem;
+  box-shadow: 2px 2px 3px #00ccff;
+  border-radius: 7px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+  text-align: center;
+  position: relative;
+  display: inline-flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.meal-card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: .25rem;
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  margin: 1rem 1rem;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #00ccff;
+}
+body {
+  background-color: #00ccff;
+  position: absolute;
+  margin: 0;
+
+}
+
+.about {
+
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+div.nutrition-info {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form#date-form {
+  width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid white;
+border-radius: 4px;
+background-color: #282c34;
+;
+
 }
+
+button#calendar-bttn {
+  /* width: 100%; */
+/* padding: 12px 20px; */
+margin: 8px 0;
+box-sizing: border-box;
+  border: 2px solid navy;
+border-radius: 4px;
+background-color: #00ccff;
+
+}
+#calendar {
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+/*note: I fixed abouts layout and I believe you could just use the same
+styling to fix nutriotion info. */
